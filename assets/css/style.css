@@ -1,0 +1,234 @@
+/* ---------- General Styling ---------- */
+
+body {
+  background-color: #282828;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+p,
+h2 {
+  font-family: "Orbitron", sans-serif;
+}
+
+button {
+  font-family: "Lato", sans-serif;
+  background-color: #4ff5b9;
+  color: #ffffff;
+  font-size: 1.2em;
+  padding: 20px;
+  border-radius: 10px;
+  margin-right: 10px;
+  border: none;
+}
+
+#home p:first-child,
+#away p:first-child {
+  color: #fff851;
+  font-size: 4em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#home p:nth-child(2),
+#away p:nth-child(2) {
+  color: #ffffff;
+  font-size: 1.5rem;
+  background-color: #282828;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* ---------- Home ---------- */
+
+#home {
+  position: absolute;
+  left: 30%;
+  top: 5vw;
+}
+
+#home p:first-child {
+  position: relative;
+  left: 50%;
+  top: 3vh;
+  z-index: 2;
+}
+
+#home p:nth-child(2) {
+  position: absolute;
+  left: 5.3vw;
+}
+
+#add-one,
+#add-two,
+#add-three {
+  position: relative;
+  top: 7vw;
+  left: 1vw;
+}
+
+#border-home,
+#border-away {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 8%;
+  border: 5px solid #4ff5b9;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 18vw;
+}
+
+#rectangle-home,
+#rectangle-away {
+  position: absolute;
+  left: 9%;
+  bottom: 15%;
+  background: #000000;
+  border-radius: 20px;
+  width: 15vw;
+  height: 30vh;
+}
+
+/* ---------- Away ---------- */
+
+#away {
+  position: absolute;
+  left: 53%;
+  top: 5vw;
+}
+
+#border-away {
+  border: 5px solid #4c5df8;
+  height: 35vh;
+}
+
+#one-score,
+#two-score,
+#three-score {
+  background-color: #4c5df8;
+  position: relative;
+  top: 3vw;
+  left: 2vw;
+}
+
+#away p:first-child {
+  position: relative;
+  left: 50%;
+  top: 3vh;
+  z-index: 2;
+}
+
+#away p:nth-child(2) {
+  position: relative;
+  top: 1em;
+  left: 3.4em;
+  width: 3.2em;
+}
+
+#rectangle-away {
+  bottom: 29%;
+}
+
+/* ---------- Reset ---------- */
+
+#reset-button {
+  background-color: #f8f8f8;
+  color: #000000;
+  font-size: 14px;
+  padding: 5px 30px;
+  position: relative;
+  top: 29rem;
+  left: 46%;
+}
+
+/* ---------- Team Name Modal Box ---------- */
+
+.modal {
+  display: none;
+}
+
+.modal-content {
+  background-color: #f8f8f8;
+  margin: auto;
+  padding: 5px;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  height: 30vh;
+}
+
+#name-button {
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.modal-content h2 {
+  text-align: center;
+}
+
+#home-team p:last-child,
+#away-team p:last-child {
+  font-size: 11px;
+  color: gray;
+}
+
+#away-team,
+#home-team {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.close {
+  color: #4ff5b9;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#name-button {
+  position: relative;
+  left: 40%;
+}
+
+#name-button:hover {
+  background-color: #282828;
+  cursor: pointer;
+}
+
+#team-button {
+  position: fixed;
+  z-index: 99;
+  left: 47%;
+  top: 75%;
+  height: 100px;
+  width: 100px;
+  border-radius: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 1em;
+}
+
+#team-button:hover {
+  background-color: #4c5df8;
+}
+
+#modal {
+  position: relative;
+  z-index: 3;
+}

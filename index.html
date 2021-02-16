@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Scorekeeper</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Orbitron&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="home">
+        <div id="border-home"></div>
+        <div id="rectangle-home"></div>
+        <div>
+            <p>0</p>
+            <p>Home</p>
+        </div>
+        <div class="button">
+            <button id="add-one">+1</button>
+            <button id="add-two">+2</button>
+            <button id="add-three">+3</button>
+        </div>
+    </section>
+    <section id="away">
+        <div id="border-away"></div>
+        <div id="rectangle-away"></div>
+        <div>
+            <p>0</p>
+            <p>Away</p>
+        </div>
+        <div class="button">
+            <button id="one-score">+1</button>
+            <button id="two-score">+2</button>
+            <button id="three-score">+3</button>
+        </div>
+    </section>
+    <div id="reset">
+        <button id="reset-button">Reset</button>
+    </div>
+    <aside>
+        <button id="team-button">Team Names!</button>
+    </aside>
+    <section id="modal">
+        <div id="team-name" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Enter the team names here</h2>
+                <div id="home-team">
+                    <p>Home Team:</p>
+                    <p contenteditable="true">&nbsp;ex. The Avengers</p>
+                </div>
+                <div id="away-team">
+                    <p>Away Team:</p>
+                    <p class="team" contenteditable="true">&nbsp;ex. Transformers</p>
+                </div>
+                <button id="name-button">Save</button>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
